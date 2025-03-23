@@ -2,7 +2,9 @@
 
 
 function jsonDataLoad(string $filePath){
+	
 	$jsonData = file_get_contents($filePath);
+	//$jsonData = file_get_contents('./src/data/movie-schedule.json');
 
 	if ($jsonData === false) {
 		die("Error: Unable to read JSON file.");

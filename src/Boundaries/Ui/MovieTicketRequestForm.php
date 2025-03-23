@@ -1,21 +1,7 @@
 <?php
-
-include '../../controllers/MovieSceduleDataFilterController.php';
-
-
-
-//  call controller and get data
-
-
-$movieSceduleDataFilterController = new MovieSceduleDataFilterController();
-$movieSceduleDataFilterController->aaa();
-
-
-
-$movieSceduleDataFilterController->loadAllData();
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+//use App\Controllers\MovieSceduleDataFilterController;
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,24 +10,24 @@ $movieSceduleDataFilterController->loadAllData();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie System</title>
     <style>
-        /* Reset Styles */
+        /* General Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
-
+        
         /* Centered Heading */
         .heading {
             text-align: center;
             font-size: 32px;
             font-weight: bold;
-            margin: 20px 0;
+            margin: 20px 0;            
             color: #333;
         }
 
-
+        
         /* Navigation Bar */
         .navbar {
             background: linear-gradient(45deg, #ff6600, #ffcc00);
@@ -94,18 +80,21 @@ $movieSceduleDataFilterController->loadAllData();
     <!-- Navigation Menu -->
     <nav class="navbar">
         <ul class="menu">
-            <li><a href="../../index.php">⬅️ Back</a></li>
-            <li><a href="./MovieTicketRequestForm.php">🎟️ Buy Ticket(s)</a></li>
+            <li><a href="../../../index.php">⬅️ Back</a></li>
+            <li><a href="./MovieSceduleView.php">🎬 View Movie Schedule</a></li>
             <li><a href="#">📞 Contact</a></li>
         </ul>
     </nav>
 
     <!-- Centered Heading -->
-    <h1 class="heading">Movie Scedule 🎬</h1>
-    
+    <h1 class="heading">Movie Ticket Request Form 🎟️</h1>
 
 </body>
 </html>
+
+
+
+
 
 
 

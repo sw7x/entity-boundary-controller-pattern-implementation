@@ -1,3 +1,20 @@
+<?php
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+use App\Controllers\MovieSceduleDataFilterController;
+
+//  call controller and get data
+
+
+$movieSceduleDataFilterController = new MovieSceduleDataFilterController();
+$movieSceduleDataFilterController->aaa();
+
+//$movieSceduleDataFilterController->loadAllData();
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,8 +93,8 @@
     <!-- Navigation Menu -->
     <nav class="navbar">
         <ul class="menu">
-            <li><a href="./boundaries/ui/MovieSceduleView.php">🎬 View Movie Schedule</a></li>
-            <li><a href="./boundaries/ui/MovieTicketRequestForm.php">🎟️ Buy Ticket(s)</a></li>
+            <li><a href="./src/boundaries/ui/MovieSceduleView.php">🎬 View Movie Schedule</a></li>
+            <li><a href="./src/boundaries/ui/MovieTicketRequestForm.php">🎟️ Buy Ticket(s)</a></li>
             <li><a href="#">📞 Contact</a></li>
         </ul>
     </nav>

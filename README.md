@@ -1,5 +1,5 @@
 ## Exercise
-<img src="./ex.png">
+<img src="./docs/ex.png">
 
 ## TODO - Overall Usecase diagram
 

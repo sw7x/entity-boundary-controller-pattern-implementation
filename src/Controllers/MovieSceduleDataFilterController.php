@@ -1,7 +1,7 @@
 <?php
 
-
-include '../../utils/json.php';
+namespace App\Controllers;
+//include '../../utils/json.php';
 
 
 
@@ -16,18 +16,25 @@ class MovieSceduleDataFilterController{
    public function loadAllData()
    {
 
-      $movieScheduleData = jsonDataLoad('../../data/movie-schedule.json');
+
+      $movieScheduleData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] . '/src/Data/movie-schedule.json');
+      //$movieScheduleData = jsonDataLoad('../../../src/Data/movie-schedule.json');
       var_dump($movieScheduleData);
+   
       
-      $moviesData = jsonDataLoad('../../data/movies.json');
+      $movieScheduleData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/movie-schedule.json');
+      var_dump($movieScheduleData);
+
+      $moviesData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/movies.json');
       var_dump($moviesData);
 
-      $theatresData = jsonDataLoad('../../data/theatres.json'); 
+      $theatresData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/theatres.json'); 
       var_dump($theatresData);
       
-      $theatreSectionsData = jsonDataLoad('../../data/theatre-sections.json');
+      $theatreSectionsData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/theatre-sections.json');
       var_dump($theatreSectionsData);
-      die();
+      /**/
+      //die();
 
 
 
