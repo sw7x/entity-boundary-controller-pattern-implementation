@@ -1,0 +1,92 @@
+[
+	{
+		"name": "Grand Cinema",
+		"address": "123 Main Street, Cityville",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 30},
+			{"sectionName": "VIP", "seatCount": 20},
+			{"sectionName": "IMAX", "seatCount": 10}
+		]
+	},
+	{
+		"name": "City Mall Theatre",
+		"address": "456 Mall Road, Townsville",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 40},
+			{"sectionName": "Balcony", "seatCount": 25},
+			{"sectionName": "Kids Zone", "seatCount": 15}
+		]
+	},
+	{
+		"name": "IMAX Arena",
+		"address": "789 Cinema Lane, Metropolis",
+		"sections": [
+			{"sectionName": "IMAX", "seatCount": 50},
+			{"sectionName": "VIP", "seatCount": 30},
+			{"sectionName": "Standard", "seatCount": 40}
+		]
+	},
+	{
+		"name": "Sunset Cinema",
+		"address": "101 Sunset Boulevard, Beachtown",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 35},
+			{"sectionName": "Front Row", "seatCount": 20},
+			{"sectionName": "Kids Zone", "seatCount": 10}
+		]
+	},
+	{
+		"name": "Starlight Theatre",
+		"address": "202 Star Avenue, Skytown",
+		"sections": [
+			{"sectionName": "VIP", "seatCount": 25},
+			{"sectionName": "Balcony", "seatCount": 30},
+			{"sectionName": "IMAX", "seatCount": 15}
+		]
+	},
+	{
+		"name": "Downtown Movies",
+		"address": "303 Central Road, Downtown",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 50},
+			{"sectionName": "Front Row", "seatCount": 30},
+			{"sectionName": "Kids Zone", "seatCount": 20}
+		]
+	},
+	{
+		"name": "Marvel Multiplex",
+		"address": "404 Hero Street, Comicville",
+		"sections": [
+			{"sectionName": "IMAX", "seatCount": 60},
+			{"sectionName": "VIP", "seatCount": 40},
+			{"sectionName": "Standard", "seatCount": 50}
+		]
+	},
+	{
+		"name": "Classic Screens",
+		"address": "505 Retro Lane, Oldtown",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 45},
+			{"sectionName": "Balcony", "seatCount": 35},
+			{"sectionName": "Front Row", "seatCount": 25}
+		]
+	},
+	{
+		"name": "Urban Cinema",
+		"address": "606 City Center, Urbantown",
+		"sections": [
+			{"sectionName": "VIP", "seatCount": 30},
+			{"sectionName": "IMAX", "seatCount": 20},
+			{"sectionName": "Kids Zone", "seatCount": 15}
+		]
+	},
+	{
+		"name": "Family Fun Theatre",
+		"address": "707 Park Avenue, Familytown",
+		"sections": [
+			{"sectionName": "Standard", "seatCount": 40},
+			{"sectionName": "Kids Zone", "seatCount": 25},
+			{"sectionName": "Front Row", "seatCount": 20}
+		]
+	}
+]

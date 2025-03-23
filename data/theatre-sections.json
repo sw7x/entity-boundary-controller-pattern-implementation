@@ -1,0 +1,62 @@
+[
+  {
+    "section": "Standard",
+    "description": "Regular seating with a good view of the screen.",
+    "price": 10.99
+  },
+  {
+    "section": "Premium",
+    "description": "Larger, more comfortable seats with extra legroom.",
+    "price": 14.99
+  },
+  {
+    "section": "VIP",
+    "description": "Luxury recliner seats with personalized service and the best view.",
+    "price": 19.99
+  },
+  {
+    "section": "Balcony",
+    "description": "Elevated seating for a panoramic view of the screen.",
+    "price": 12.99
+  },
+  {
+    "section": "Front Row",
+    "description": "Seats closest to the screen, often at a lower price.",
+    "price": 8.99
+  },
+  {
+    "section": "Middle Row",
+    "description": "Central seating with the best balance of view and comfort.",
+    "price": 11.99
+  },
+  {
+    "section": "Rear Row",
+    "description": "Seats at the back of the theatre, offering a full view of the screen.",
+    "price": 10.99
+  },
+  {
+    "section": "Box Seats",
+    "description": "Private or semi-private seating areas for small groups.",
+    "price": 24.99
+  },
+  {
+    "section": "3D Section",
+    "description": "Seats equipped with 3D glasses for 3D movie screenings.",
+    "price": 13.99
+  },
+  {
+    "section": "IMAX",
+    "description": "Premium large-format screens with enhanced sound and visuals.",
+    "price": 18.99
+  },
+  {
+    "section": "Kids Zone",
+    "description": "Family-friendly seating with space for strollers and child-friendly amenities.",
+    "price": 9.99
+  },
+  {
+    "section": "Accessible Seating",
+    "description": "Seats designed for wheelchair users and those with mobility needs.",
+    "price": 10.99
+  }
+]
