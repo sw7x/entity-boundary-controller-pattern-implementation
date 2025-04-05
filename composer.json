@@ -5,7 +5,8 @@
             "App\\": "src/"           
         },
         "files": [
-            "src/Utils/json.php"
+            "src/Utils/json.php",
+            "src/Utils/debug.php"
         ]
     },
     "authors": [

@@ -1,4 +1,5 @@
 <?php
+namespace App\Entities;
 
 class MovieBooking
 {
@@ -6,10 +7,10 @@ class MovieBooking
     private Section $section;
     private array $seats = [];  // int[]
     private bool $paid;
-    private DateTime $movieViewDate;
+    private \DateTime $movieViewDate;
 
     private ?Customer $customer = null;
-    private ?DateTime $paidDate = null;
+    private ?\DateTime $paidDate = null;
 
     
 
@@ -18,7 +19,7 @@ class MovieBooking
         Section $section,
         array $seats, 
         bool $paid = false,
-        DateTime $movieViewDate
+        \DateTime $movieViewDate
     ) {
         $this->theatreSession = $theatreSession;
         $this->section = $section;
@@ -91,7 +92,7 @@ class MovieBooking
     {
         return [
             'theatre_session' => $this->theatreSession->toArray(),
-            'section' => $this->section->toArray()
+            'section' => $this->section->toArray(),
             'seats' => $this->seats,            
             'paid' => $this->paid,
             'movieViewDate' => $this->movieViewDate->format('Y-m-d'),
@@ -128,7 +129,7 @@ class MovieBooking
         $seatNoArr = $this->seats;
         $bookedSeatsArr = [];
         foreach ($seatNoArr as $seatNo) {
-            $bookedSeatsArr[] = $this->section->getSeatbyId($seatNo)
+            $bookedSeatsArr[] = $this->section->getSeatbyId($seatNo);
         }
         return $bookedSeatsArr;
     }
@@ -136,14 +137,14 @@ class MovieBooking
 
     public function ticketCount(): int
     {
-        return count($seats);
+        return count($this->seats);
     }
 
 
     public function perTicketCost(): int
     {
         $costForMovie   = $this->getMovie()->getPrice();
-        $costForSeat    = $this->section->getSeatPrice();
+        $costForSeats    = $this->section->getSeatPrice();
 
         $singleTicketCost    = $costForMovie + $costForSeats;
         return $singleTicketCost;

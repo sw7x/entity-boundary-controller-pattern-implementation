@@ -1,4 +1,5 @@
 <?php
+namespace App\Entities;
 
 class MovieSchedule
 {
@@ -40,8 +41,8 @@ class MovieSchedule
     public function getSessionsByMovieAndTheatre(Movie $givenMovie, Theatre $givenTheatre): array
     {
         return array_filter($this->theatreSessions, function (TheatreSession $session) use ($givenMovie, $givenTheatre) {
-            $tempMovie      = $session->getMovie()
-            $tempTheatre    = $session->getTheatre()
+            $tempMovie      = $session->getMovie();
+            $tempTheatre    = $session->getTheatre();
             
             return $tempMovie->getName === $givenMovie->getName && 
                 $tempTheatre->getName === $givenTheatre->getName;

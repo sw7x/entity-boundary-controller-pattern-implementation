@@ -6,7 +6,7 @@ use App\Controllers\MovieSceduleDataFilterController;
 
 
 $movieSceduleDataFilterController = new MovieSceduleDataFilterController();
-$movieSceduleDataFilterController->aaa();
+$movieSceduleDataFilterController->test();
 
 //$movieSceduleDataFilterController->loadAllData();
 

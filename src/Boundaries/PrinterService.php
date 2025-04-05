@@ -1,9 +1,10 @@
 <?php
+namespace App\Boundaries;
 
 class PrinterService{
 	
-	public function print(): void
+	public function printTicket(): void
 	{
-
+		dump('ticket printed');
 	}
 }

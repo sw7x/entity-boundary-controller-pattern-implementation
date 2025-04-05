@@ -1,6 +1,33 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
-//use App\Controllers\MovieSceduleDataFilterController;
+
+use App\Controllers\TicketRequestController;
+use App\Controllers\TicketPurchaseController;
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //confirm ticket buy - step2
+
+    dump($_POST);    
+    dump('$_POST1');
+
+
+    $ticketCost     = (int)$_POST["ticket_cost"];    
+    $customerName   = $_POST["customer_name"];
+    $customerPhone  = $_POST["customer_phone"];
+
+    $seatsString    = $_POST['seats'] ?? '';
+    $seatsArray     = array_map('intval', explode(',', $seatsString));
+
+    $ticketPurchaseController = new TicketPurchaseController();
+    $ticketPurchaseController->purchase($customerName, $customerPhone, $seatsArray);
+
+}else{
+    //request ticket - step1
+    $ticketRequestController  = new TicketRequestController();
+    $ticketRequestController->requestTicket();    
+}
+
 ?>
 
 <!DOCTYPE html>

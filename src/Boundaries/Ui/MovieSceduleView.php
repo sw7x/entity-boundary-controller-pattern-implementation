@@ -1,15 +1,13 @@
 <?php
-
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+
 use App\Controllers\MovieSceduleDataFilterController;
 
 //  call controller and get data
-
-
 $movieSceduleDataFilterController = new MovieSceduleDataFilterController();
-$movieSceduleDataFilterController->loadAllData();
-
-
+dump($movieSceduleDataFilterController->loadAllData());
+dump($movieSceduleDataFilterController->loadAllMovies());
+dump($movieSceduleDataFilterController->loadAllTheatres());
 ?>
 
 

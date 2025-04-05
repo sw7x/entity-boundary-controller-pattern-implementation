@@ -1,4 +1,5 @@
 <?php
+namespace App\Entities;
 
 class Theatre
 {
@@ -42,6 +43,17 @@ class Theatre
         return $this->sections;
     }
 
+
+    // Setters
+    public function setSections(array $sections): void
+    {
+        $this->sections = $sections;
+    }
+
+
+
+
+
     
     // Convert object to an associative array
     public function toArray(): array
@@ -59,7 +71,7 @@ class Theatre
         $availableSections = []; 
         foreach ($this->sections as $section) {
             if($section->haveSeats()){
-                $availableSections[] = $section
+                $availableSections[] = $section;
             }
         }
         return $availableSections;         

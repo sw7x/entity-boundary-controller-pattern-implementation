@@ -1,18 +1,19 @@
 <?php
+namespace App\Entities;
 
 class Seat
 {
-    private string $seatNo;
-    private bool $availability;
+    private int $seatNo;
+    private ?bool $availability;
 
-    public function __construct(string $seatNo, bool $availability)
+    public function __construct(int $seatNo, bool $availability=true)
     {
         $this->seatNo = $seatNo;
         $this->availability = $availability;
     }
 
     // Getters
-    public function getSeatNo(): string
+    public function getSeatNo(): int
     {
         return $this->seatNo;
     }

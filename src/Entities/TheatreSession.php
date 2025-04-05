@@ -1,4 +1,5 @@
 <?php
+namespace App\Entities;
 
 class TheatreSession
 {
@@ -6,16 +7,16 @@ class TheatreSession
     private Theatre $theatre;
     private string $startTime;
     private string $endTime;
-    private string $fromDate;
-    private string $toDate;
+    private ?string $fromDate;
+    private ?string $toDate;
 
     public function __construct(
     	Movie $movie, 
     	Theatre $theatre, 
     	string $startTime, 
     	string $endTime, 
-    	string $fromDate, 
-    	string $toDate
+    	string $fromDate = null, 
+    	string $toDate = null
     ){
         $this->movie = $movie;
         $this->theatre = $theatre;
@@ -46,20 +47,45 @@ class TheatreSession
         return $this->endTime;
     }
 
-    public function getFromDate(): string
+    public function getFromDate(): ?string
     {
         return $this->fromDate;
     }
 
-    public function getToDate(): string
+    public function getToDate(): ?string
     {
         return $this->toDate;
     }
 
+    // Setters
+    public function setFromDate(string $fromDate): void
+    {
+        $this->fromDate = $fromDate;
+    }
+
+    public function setToDate(string $toDate): void
+    {
+        $this->toDate = $toDate;
+    }
+
+
+
     // Check if a session is running on a given date
     public function isSessionRunningOn(string $date): bool
     {
-        return $date >= $this->fromDate && $date <= $this->toDate;
+        if(is_null($this->fromDate))
+            throw new \Exception("no value is assign to fromDate !");            
+
+        if(is_null($this->toDate))
+            throw new \Exception("no value is assign to toDate !");
+
+
+        // Convert strings to DateTime objects
+        $dateObj        = new \DateTime($date);
+        $fromDateObj    = new \DateTime($this->fromDate);
+        $toDateObj      = new \DateTime($this->toDate);
+
+        return $dateObj >= $fromDateObj && $dateObj <= $toDateObj;
     }
 
     // Convert object to an associative array

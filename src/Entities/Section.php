@@ -1,4 +1,5 @@
 <?php
+namespace App\Entities;
 
 class Section
 {
@@ -128,8 +129,12 @@ class Section
 
     public function getAvailableSeatsByCount(int $count): array
     {
-        $availableSeats = array_filter($this->seats, fn($seat) => $seat->isAvailable());
-        
+        //$availableSeats = array_filter($this->seats, fn($seat) => $seat->isAvailable());
+        $availableSeats = array_map(
+            fn($seat) => $seat->getSeatNo(), 
+            array_filter($this->seats, fn($seat) => $seat->isAvailable() === true)
+        );
+        $availableSeats = array_values($availableSeats);
         if($count > count($availableSeats)){
             return [];
         }else{

@@ -18,3 +18,13 @@ function jsonDataLoad(string $filePath){
 
 	return($data);
 }
+
+
+
+function searchJsonData($dataArr, $searchKey='name', $searchTerm) {
+    $arr =  array_filter($dataArr, function ($dataItem) use ($searchKey, $searchTerm) {
+        return stripos($dataItem[$searchKey], $searchTerm) !== false;
+    });
+
+    return !reset($arr)?[]:reset($arr);
+}

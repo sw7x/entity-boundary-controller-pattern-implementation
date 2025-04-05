@@ -1,6 +1,7 @@
 <?php
+namespace App\Boundaries;
 
-class TocketBookingDBGateway{
+class TicketBookingDBGateway{
 	
 
 	public function loadAllData(): void
@@ -15,7 +16,7 @@ class TocketBookingDBGateway{
 
 
 
-	public function InsertData(): void
+	public function insertData(): void
 	{
 
 	}

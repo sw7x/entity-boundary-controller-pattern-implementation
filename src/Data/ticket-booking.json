@@ -8,14 +8,63 @@
         "theatre": {
             "name": "Grand Cinema",
             "session": {
+                "startTime": "10:00",
+                "endTime": "11:30"
+            },
+            "seats": [
+                1,
+                2,
+                3
+            ],
+            "section": "IMAX"
+        },
+        "paidDate": "2025/1/2",
+        "movieViewDate": "2025/1/18"
+    },    
+    {
+        "movieName": "Inception",
+        "customer": {
+            "name": "Sam",
+            "contactNumber": "0789"
+        },
+        "theatre": {
+            "name": "Grand Cinema",
+            "session": {
+                "startTime": "10:00",
+                "endTime": "11:30"
+            },
+            "seats": [
+                7,
+                8,
+                9,
+                10
+            ],
+            "section": "IMAX"
+        },
+        "paidDate": "2025/1/3",
+        "movieViewDate": "2025/1/18"
+    },
+    {
+        "movieName": "Inception",
+        "customer": {
+            "name": "Peter",
+            "contactNumber": "0788"
+        },
+        "theatre": {
+            "name": "Grand Cinema",
+            "session": {
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [1, 2, 3],
-            "section": "Standard",
+            "seats": [
+                1,
+                2,
+                3
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/1/1",
-        "movieViewDate": "2015/1/2"
+        "paidDate": "2025/1/1",
+        "movieViewDate": "2025/1/2"
     },
     {
         "movieName": "The Dark Knight",
@@ -29,11 +78,14 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [4, 5],
-            "section": "Balcony",
+            "seats": [
+                4,
+                5
+            ],
+            "section": "Balcony"
         },
-        "paidDate": "2015/1/3",
-        "movieViewDate": "2015/1/4"
+        "paidDate": "2025/1/3",
+        "movieViewDate": "2025/1/4"
     },
     {
         "movieName": "Avatar",
@@ -47,11 +99,16 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [6, 7, 8, 9],
-            "section": "IMAX",
+            "seats": [
+                6,
+                7,
+                8,
+                9
+            ],
+            "section": "IMAX"
         },
-        "paidDate": "2015/1/5",
-        "movieViewDate": "2015/1/6"
+        "paidDate": "2025/1/5",
+        "movieViewDate": "2025/1/6"
     },
     {
         "movieName": "Titanic",
@@ -65,11 +122,14 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [10, 11],
-            "section": "Front Row",
+            "seats": [
+                10,
+                11
+            ],
+            "section": "Front Row"
         },
-        "paidDate": "2015/1/7",
-        "movieViewDate": "2015/1/8"
+        "paidDate": "2025/1/7",
+        "movieViewDate": "2025/1/8"
     },
     {
         "movieName": "Interstellar",
@@ -83,11 +143,15 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [12, 13, 14],
-            "section": "VIP",
+            "seats": [
+                12,
+                13,
+                14
+            ],
+            "section": "VIP"
         },
-        "paidDate": "2015/1/9",
-        "movieViewDate": "2015/1/10"
+        "paidDate": "2025/1/9",
+        "movieViewDate": "2025/1/10"
     },
     {
         "movieName": "Joker",
@@ -101,11 +165,16 @@
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [15, 16, 17, 18],
-            "section": "Kids Zone",
+            "seats": [
+                15,
+                16,
+                17,
+                18
+            ],
+            "section": "Kids Zone"
         },
-        "paidDate": "2015/1/11",
-        "movieViewDate": "2015/1/12"
+        "paidDate": "2025/1/11",
+        "movieViewDate": "2025/1/12"
     },
     {
         "movieName": "Godfather",
@@ -119,11 +188,14 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [19, 20],
-            "section": "Standard",
+            "seats": [
+                19,
+                20
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/1/13",
-        "movieViewDate": "2015/1/14"
+        "paidDate": "2025/1/13",
+        "movieViewDate": "2025/1/14"
     },
     {
         "movieName": "Frozen",
@@ -137,11 +209,17 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [1, 2, 3, 4, 5],
-            "section": "Balcony",
+            "seats": [
+                1,
+                2,
+                3,
+                4,
+                5
+            ],
+            "section": "Balcony"
         },
-        "paidDate": "2015/1/15",
-        "movieViewDate": "2015/1/16"
+        "paidDate": "2025/1/15",
+        "movieViewDate": "2025/1/16"
     },
     {
         "movieName": "Black Panther",
@@ -155,11 +233,15 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [6, 7, 8],
-            "section": "VIP",
+            "seats": [
+                6,
+                7,
+                8
+            ],
+            "section": "VIP"
         },
-        "paidDate": "2015/1/17",
-        "movieViewDate": "2015/1/18"
+        "paidDate": "2025/1/17",
+        "movieViewDate": "2025/1/18"
     },
     {
         "movieName": "Matrix",
@@ -173,11 +255,16 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [9, 10, 11, 12],
-            "section": "Front Row",
+            "seats": [
+                9,
+                10,
+                11,
+                12
+            ],
+            "section": "Front Row"
         },
-        "paidDate": "2015/1/19",
-        "movieViewDate": "2015/1/20"
+        "paidDate": "2025/1/19",
+        "movieViewDate": "2025/1/20"
     },
     {
         "movieName": "Fall",
@@ -191,11 +278,15 @@
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [13, 14, 15],
-            "section": "IMAX",
+            "seats": [
+                13,
+                14,
+                15
+            ],
+            "section": "IMAX"
         },
-        "paidDate": "2015/1/21",
-        "movieViewDate": "2015/1/22"
+        "paidDate": "2025/1/21",
+        "movieViewDate": "2025/1/22"
     },
     {
         "movieName": "Batman",
@@ -209,11 +300,16 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [16, 17, 18, 19],
-            "section": "Kids Zone",
+            "seats": [
+                16,
+                17,
+                18,
+                19
+            ],
+            "section": "Kids Zone"
         },
-        "paidDate": "2015/1/23",
-        "movieViewDate": "2015/1/24"
+        "paidDate": "2025/1/23",
+        "movieViewDate": "2025/1/24"
     },
     {
         "movieName": "Superman",
@@ -227,11 +323,15 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [20, 1, 2],
-            "section": "Standard",
+            "seats": [
+                20,
+                1,
+                2
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/1/25",
-        "movieViewDate": "2015/1/26"
+        "paidDate": "2025/1/25",
+        "movieViewDate": "2025/1/26"
     },
     {
         "movieName": "Reacher",
@@ -245,11 +345,16 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [3, 4, 5, 6],
-            "section": "Balcony",
+            "seats": [
+                3,
+                4,
+                5,
+                6
+            ],
+            "section": "Balcony"
         },
-        "paidDate": "2015/1/27",
-        "movieViewDate": "2015/1/28"
+        "paidDate": "2025/1/27",
+        "movieViewDate": "2025/1/28"
     },
     {
         "movieName": "Sonic",
@@ -263,11 +368,17 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [7, 8, 9, 10, 11],
-            "section": "VIP",
+            "seats": [
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "section": "VIP"
         },
-        "paidDate": "2015/1/29",
-        "movieViewDate": "2015/1/30"
+        "paidDate": "2025/1/29",
+        "movieViewDate": "2025/1/30"
     },
     {
         "movieName": "Inception",
@@ -281,11 +392,15 @@
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [12, 13, 14],
-            "section": "Front Row",
+            "seats": [
+                12,
+                13,
+                14
+            ],
+            "section": "Front Row"
         },
-        "paidDate": "2015/1/31",
-        "movieViewDate": "2015/2/1"
+        "paidDate": "2025/1/31",
+        "movieViewDate": "2025/2/1"
     },
     {
         "movieName": "The Dark Knight",
@@ -299,11 +414,16 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [15, 16, 17, 18],
-            "section": "IMAX",
+            "seats": [
+                15,
+                16,
+                17,
+                18
+            ],
+            "section": "IMAX"
         },
-        "paidDate": "2015/2/2",
-        "movieViewDate": "2015/2/3"
+        "paidDate": "2025/2/2",
+        "movieViewDate": "2025/2/3"
     },
     {
         "movieName": "Avatar",
@@ -317,11 +437,16 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [19, 20, 1, 2],
-            "section": "Standard",
+            "seats": [
+                19,
+                20,
+                1,
+                2
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/2/4",
-        "movieViewDate": "2015/2/5"
+        "paidDate": "2025/2/4",
+        "movieViewDate": "2025/2/5"
     },
     {
         "movieName": "Titanic",
@@ -335,11 +460,17 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [3, 4, 5, 6, 7],
-            "section": "Kids Zone",
+            "seats": [
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "section": "Kids Zone"
         },
-        "paidDate": "2015/2/6",
-        "movieViewDate": "2015/2/7"
+        "paidDate": "2025/2/6",
+        "movieViewDate": "2025/2/7"
     },
     {
         "movieName": "Interstellar",
@@ -353,11 +484,15 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [8, 9, 10],
-            "section": "Balcony",
+            "seats": [
+                8,
+                9,
+                10
+            ],
+            "section": "Balcony"
         },
-        "paidDate": "2015/2/8",
-        "movieViewDate": "2015/2/9"
+        "paidDate": "2025/2/8",
+        "movieViewDate": "2025/2/9"
     },
     {
         "movieName": "Joker",
@@ -371,11 +506,16 @@
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [11, 12, 13, 14],
-            "section": "VIP",
+            "seats": [
+                11,
+                12,
+                13,
+                14
+            ],
+            "section": "VIP"
         },
-        "paidDate": "2015/2/10",
-        "movieViewDate": "2015/2/11"
+        "paidDate": "2025/2/10",
+        "movieViewDate": "2025/2/11"
     },
     {
         "movieName": "Godfather",
@@ -389,11 +529,15 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [15, 16, 17],
-            "section": "Front Row",
+            "seats": [
+                15,
+                16,
+                17
+            ],
+            "section": "Front Row"
         },
-        "paidDate": "2015/2/12",
-        "movieViewDate": "2015/2/13"
+        "paidDate": "2025/2/12",
+        "movieViewDate": "2025/2/13"
     },
     {
         "movieName": "Frozen",
@@ -407,11 +551,16 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [18, 19, 20, 1],
-            "section": "IMAX",
+            "seats": [
+                18,
+                19,
+                20,
+                1
+            ],
+            "section": "IMAX"
         },
-        "paidDate": "2015/2/14",
-        "movieViewDate": "2015/2/15"
+        "paidDate": "2025/2/14",
+        "movieViewDate": "2025/2/15"
     },
     {
         "movieName": "Black Panther",
@@ -425,11 +574,17 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [2, 3, 4, 5, 6],
-            "section": "Standard",
+            "seats": [
+                2,
+                3,
+                4,
+                5,
+                6
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/2/16",
-        "movieViewDate": "2015/2/17"
+        "paidDate": "2025/2/16",
+        "movieViewDate": "2025/2/17"
     },
     {
         "movieName": "Matrix",
@@ -443,11 +598,15 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [7, 8, 9],
-            "section": "Balcony",
+            "seats": [
+                7,
+                8,
+                9
+            ],
+            "section": "Balcony"
         },
-        "paidDate": "2015/2/18",
-        "movieViewDate": "2015/2/19"
+        "paidDate": "2025/2/18",
+        "movieViewDate": "2025/2/19"
     },
     {
         "movieName": "Fall",
@@ -461,11 +620,16 @@
                 "startTime": "8:00",
                 "endTime": "9:30"
             },
-            "seats": [10, 11, 12, 13],
-            "section": "Kids Zone",
+            "seats": [
+                10,
+                11,
+                12,
+                13
+            ],
+            "section": "Kids Zone"
         },
-        "paidDate": "2015/2/20",
-        "movieViewDate": "2015/2/21"
+        "paidDate": "2025/2/20",
+        "movieViewDate": "2025/2/21"
     },
     {
         "movieName": "Batman",
@@ -479,11 +643,17 @@
                 "startTime": "10:00",
                 "endTime": "11:30"
             },
-            "seats": [14, 15, 16, 17, 18],
-            "section": "VIP",
+            "seats": [
+                14,
+                15,
+                16,
+                17,
+                18
+            ],
+            "section": "VIP"
         },
-        "paidDate": "2015/2/22",
-        "movieViewDate": "2015/2/23"
+        "paidDate": "2025/2/22",
+        "movieViewDate": "2025/2/23"
     },
     {
         "movieName": "Superman",
@@ -497,11 +667,16 @@
                 "startTime": "12:00",
                 "endTime": "13:30"
             },
-            "seats": [19, 20, 1, 2],
-            "section": "Front Row",
+            "seats": [
+                19,
+                20,
+                1,
+                2
+            ],
+            "section": "Front Row"
         },
-        "paidDate": "2015/2/24",
-        "movieViewDate": "2015/2/25"
+        "paidDate": "2025/2/24",
+        "movieViewDate": "2025/2/25"
     },
     {
         "movieName": "Reacher",
@@ -515,11 +690,16 @@
                 "startTime": "14:00",
                 "endTime": "15:30"
             },
-            "seats": [3, 4, 5, 6],
-            "section": "IMAX",
+            "seats": [
+                3,
+                4,
+                5,
+                6
+            ],
+            "section": "IMAX"
         },
-        "paidDate": "2015/2/26",
-        "movieViewDate": "2015/2/27"
+        "paidDate": "2025/2/26",
+        "movieViewDate": "2025/2/27"
     },
     {
         "movieName": "Sonic",
@@ -533,10 +713,16 @@
                 "startTime": "16:00",
                 "endTime": "17:30"
             },
-            "seats": [7, 8, 9, 10, 11],
-            "section": "Standard",
+            "seats": [
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            "section": "Standard"
         },
-        "paidDate": "2015/2/28",
-        "movieViewDate": "2015/3/1"
+        "paidDate": "2025/2/28",
+        "movieViewDate": "2025/3/1"
     }
 ]

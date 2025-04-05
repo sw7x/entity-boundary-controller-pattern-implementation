@@ -1,106 +1,119 @@
 <?php
 
 namespace App\Controllers;
-//include '../../utils/json.php';
+
+/*
+use App\Entities\Movie;
+use App\Entities\Theatre;
+use App\Entities\Section;
+use App\Entities\Seat;
+use App\Entities\TheatreSession;
+use App\Entities\MovieSchedule;
+*/
 
 
+use App\DomainFactories\MovieScheduleDomainFactory;
 
 
 class MovieSceduleDataFilterController{
 	
-   public function aaa()
+   public function test()
    {
       echo '%***************&&&';
    }
 
-   public function loadAllData()
+   public function loadAllData():array
    {
 
+      $MovieScheduleObj = (new MovieScheduleDomainFactory())->execute();
+      $MovieScheduleObjArr = $MovieScheduleObj->toArray();
+      $theatreSessions = reset($MovieScheduleObjArr);
+      return $theatreSessions;
+   }
 
-      $movieScheduleData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] . '/src/Data/movie-schedule.json');
-      //$movieScheduleData = jsonDataLoad('../../../src/Data/movie-schedule.json');
-      var_dump($movieScheduleData);
+
+   public function loadAllMovies(): array
+   {
+      $MovieScheduleObj = (new MovieScheduleDomainFactory())->execute();      
+      $MovieScheduleArr = $MovieScheduleObj->toArray();
+      $theatreSessions  = reset($MovieScheduleArr);
+
+      $arr = [];
+      foreach ($theatreSessions as $value) {
+         $arr[] = $value['movie']['name'];
+      }
+
+      $uniqueMovies = array_values(array_unique($arr));
+      return $uniqueMovies;
+   }	
    
+
+   public function loadAllTheatres(): array
+   {
+      $MovieScheduleObj = (new MovieScheduleDomainFactory())->execute();      
+      $MovieScheduleArr = $MovieScheduleObj->toArray();
+      $theatreSessions  = reset($MovieScheduleArr);
       
-      $movieScheduleData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/movie-schedule.json');
-      var_dump($movieScheduleData);
+      $arr = [];
+      foreach ($theatreSessions as $value) {
+         $arr[] = $value['theatre']['name'];
+      }
 
-      $moviesData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/movies.json');
-      var_dump($moviesData);
+      $uniqueTheatres = array_values(array_unique($arr));
+      return $uniqueTheatres;
+   }
 
-      $theatresData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/theatres.json'); 
-      var_dump($theatresData);
+
+
+
+
+
+  
+   public function loadTheatresByScreeningMovie(string $movieName): array
+   {   
+      $MovieScheduleObj = (new MovieScheduleDomainFactory())->execute();
+      $MovieScheduleObjArr = $MovieScheduleObj->toArray();
+      $theatreSessions = reset($MovieScheduleObjArr);
+
+      $arr = [];
+      foreach ($theatreSessions as $value) {
+         if($value['movie']['name'] == $movieName){
+            $arr[] = array(
+               'theatre_name' => $value['theatre']['name'],
+               'start_time'   => $value['start_time'],
+               'end_time'     => $value['end_time'],
+               'from_date'    => $value['from_date'],
+               'to_date'      => $value['to_date']
+            );
+         }
+      }
       
-      $theatreSectionsData = jsonDataLoad($_SERVER['DOCUMENT_ROOT'] .'/src/Data/theatre-sections.json');
-      var_dump($theatreSectionsData);
-      /**/
-      //die();
+      $uniqueTheatres = array_values(array_unique($arr));
+      return $uniqueTheatres;
+   }
 
 
+   public function loadMoviesPlayingAtTheatre(string $theatreName): array
+   {
+      $MovieScheduleObj = (new MovieScheduleDomainFactory())->execute();
+      $MovieScheduleObjArr = $MovieScheduleObj->toArray();
+      $theatreSessions = reset($MovieScheduleObjArr);
 
-      //movie data retrive from movies.json
-      //theatre data retrive from theatres.json
-
-
-
-/*    
-"theatre": "Grand Cinema",
-"movie": "Inception",
-"startTime": "8:00",
-"endTime": "9:30",
-"fromDate": "2015/1/1",
-"toDate": "2021/1/31"
-*/
-
+      $arr = [];
+      foreach ($theatreSessions as $value) {
+         if($value['theatre']['name'] == $theatreName){
+            $arr[] = array(
+               'movie_name' => $value['movie']['name'],
+               'start_time' => $value['start_time'],
+               'end_time'   => $value['end_time'],
+               'from_date'  => $value['from_date'],
+               'to_date'    => $value['to_date']
+            );
+         }
+      }
       
-
-   }
-
-
-
-
-
-	/*
-   public function loadAllMovies(): void
-   {
-   
-   }
-
-   public function loadAllTheatres(): void
-   {
-   
-   }
-
-
-   public function loadTheatresByScreeningMovie(Movie): void
-   {
-   
-      // load theatre with fromDate, toDate
+      $uniqueMovies = array_values(array_unique($arr));
+      return $uniqueMovies;
    }
    
-   public function loadMoviePlayingAtTheatre(Theatre): void
-   {
-      // load Movie with fromDate, toDate
-   }
-
-
-
-
-
-   
-
-   public function loadTimeSlotsByMovie(): void
-   {
-   
-   }
-
-   public function loadTimeSlotsByTheatre(): void
-   {
-   
-   }
-
-   */
-
-
-
 }
