@@ -1,10 +1,13 @@
 ## Exercise
 <img src="./docs/ex.png">
 
+
 ## OOAD Process
 <img src="./docs/process.jpeg">
 
-## TODO - Overall Usecase diagram
+
+## Overall Usecase diagram
+<img src="./docs/use-case.jpeg">
 
 
 ## Overall Class Diagram for Entities
