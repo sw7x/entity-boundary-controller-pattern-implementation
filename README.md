@@ -7,7 +7,7 @@
 
 
 ## Overall Usecase diagram
-<img src="./docs/use-case.jpeg">
+<img src="./docs/use-case.png">
 
 
 ## Overall Class Diagram for Entities
