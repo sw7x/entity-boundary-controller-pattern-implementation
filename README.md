@@ -13,9 +13,13 @@
 ## Overall Class Diagram for Entities
 <img src="./docs/cls.png">
 
+
 ## TODO - Overall state chart
 
-## TODO - collaboration Diagram for usecases1
+
+## collaboration Diagram 1 for view movie schedule usecases
+<img src="./docs/collab-1.png">
+
 
 ## TODO - collaboration Diagram for usecases2
 
