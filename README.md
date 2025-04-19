@@ -18,4 +18,4 @@
 
 ## TODO - collaboration Diagram for usecases3
 
-## TODO - Overall class diagram
+## TODO - Overall class diagram (including entity, boundary, controller classes)
