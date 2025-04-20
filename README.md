@@ -22,6 +22,8 @@
 
 
 ## TODO - collaboration Diagram 2 for request ticket usecase
+1. choose movie from movie schdule
+2. request ticket for choosed movie
 <img src="./docs/collab-2.png">
 
 
