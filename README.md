@@ -17,18 +17,19 @@
 ## TODO - Overall state chart
 
 
-## collaboration Diagram 1 for view movie schedule usecase
+## Collaboration Diagram 1 for view movie schedule usecase
 <img src="./docs/collab-1.png">
 
 
-## TODO - collaboration Diagram 2 for request ticket usecase
+## Collaboration Diagram 2 for request ticket usecase
 1. choose movie from movie schdule
 2. request ticket for choosed movie
 <img src="./docs/collab-2.png">
 
 
-## TODO - collaboration Diagram 3 for purchase ticket usecase
+## Collaboration Diagram 3 for purchase ticket usecase
 <img src="./docs/collab-3.png">
 
 
-## TODO - Overall class diagram (including entity, boundary, controller classes)
+## Overall class diagram (including entity, boundary, controller classes)
+<img src="./docs/overall-cls.png">
