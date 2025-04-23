@@ -14,9 +14,6 @@
 <img src="./docs/cls.png">
 
 
-## TODO - Overall state chart
-
-
 ## Collaboration Diagram 1 for view movie schedule usecase
 <img src="./docs/collab-1.png">
 
